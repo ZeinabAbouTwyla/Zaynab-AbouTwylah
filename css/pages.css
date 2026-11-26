@@ -308,3 +308,25 @@ html[dir="rtl"] .dv__arrow { transform: scaleX(-1); } html[dir="rtl"] .dv__arrow
 html[dir="rtl"] .dv__arrow--a { left: auto; right: 10%; } html[dir="rtl"] .dv__arrow--b { left: auto; right: 62%; }
 @media (max-width: 640px) { .dv { padding-top: 60px; } .dv__arrow { top: 28px; width: 17%; } }
 .contact-form__note.is-ok{color:#6fe3a5}.contact-form__note.is-err{color:#ff8a8a}
+
+/* ---- Mobile fit fix (Nov 26): no sideways overflow, header and cards fit 360px phones ---- */
+html, body { overflow-x: clip; max-width: 100%; }
+.home-hero { overflow-x: clip; }
+.xcard, .xcard__head > div { min-width: 0; }
+.xcard__role, .xcard__org, .xcard__meta { overflow-wrap: anywhere; }
+@media (max-width: 768px) {
+  body .navbar { gap: 8px; padding: 0 10px 0 14px; }
+  body .navbar__id { flex: 1 1 auto; min-width: 0; gap: 8px; }
+  body .navbar__id .navbar__avatar { width: 38px; height: 38px; flex: none; }
+  body .navbar__who { min-width: 0; }
+  body .navbar__who b { font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  body .navbar__lang { flex: none; margin-inline: 0; }
+  body .navbar__hamburger { flex: 0 0 44px; width: 44px; height: 44px; }
+}
+@media (max-width: 560px) {
+  .xcard__head { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .tl { padding-left: 48px; }
+  .tl__rail { left: 10px; }
+  .tl__icon { left: 12px; width: 34px; height: 34px; }
+  .xcard { padding: 18px 16px; }
+}
