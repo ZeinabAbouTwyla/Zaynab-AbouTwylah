@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Zaynab AbouTwylah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/arabic-fonts.css" />
+<link rel="stylesheet" href="../css/glass.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <script>try{if(localStorage.getItem("zp_lang")==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl"}}catch(e){}</script>
+<link rel="stylesheet" href="../css/footer.css" />
+</head>
+<body class="inner">
+  <nav class="navbar">
+    <a href="../index.html" class="navbar__id" aria-label="Zaynab AbouTwylah"><span class="navbar__avatar"><img src="../assets/images/zaynab.png" alt="Zaynab"></span><span class="navbar__who"><b>Zaynab AbouTwylah</b><small>Full Stack .NET Developer</small></span></a>
+    <ul class="navbar__links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <main class="page">
+    <p class="page__hi">My work</p>
+    <h1 class="page__title">My <span class="hl">projects</span></h1>
+    <p class="page__sub">Filter by type, then flip through each project on a laptop and on a phone, open its details, or visit the live site.</p>
+    <div class="pfilter" role="group" aria-label="Project types">
+      <button class="pfilter__b is-on" data-f="all">All <i>22</i></button><button class="pfilter__b" data-f="landing">Landing pages <i>13</i></button><button class="pfilter__b" data-f="shop">Shops & e-commerce <i>6</i></button><button class="pfilter__b" data-f="food">Food & cafés <i>4</i></button><button class="pfilter__b" data-f="learn">Courses & education <i>4</i></button><button class="pfilter__b" data-f="biz">Business & services <i>5</i></button><button class="pfilter__b" data-f="personal">Portfolios & personal <i>3</i></button>
+    </div>
+    <p class="pfilter__empty" hidden>No projects in this type yet.</p>
+    <div class="projs">
+      <article class="card proj-card" data-cats="learn" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 3</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/satr-1-desk-en.jpg" alt="Satr Home on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/satr-1-mob-en.jpg" alt="Satr Home on phone" /></figure><figure class="gal__slide" data-cap="Courses"><img class="gal__img gal__img--desk" src="../assets/projects/shots/satr-2-desk-en.jpg" alt="Satr Courses on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/satr-2-mob-en.jpg" alt="Satr Courses on phone" /></figure><figure class="gal__slide" data-cap="Playground"><img class="gal__img gal__img--desk" src="../assets/projects/shots/satr-3-desk-en.jpg" alt="Satr Playground on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/satr-3-mob-en.jpg" alt="Satr Playground on phone" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Courses"></button><button class="gal__dot" aria-label="Playground"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Satr</span></h2>
+          <p class="proj-card__sub">Learn programming line by line</p>
+          <p class="proj-card__desc">Satr is a programming-courses website in Arabic and English. A learner picks one of five tracks, opens its courses and lessons, and can try code straight away in a built-in playground without installing anything.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-satr.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Satr/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing shop" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/laffa-1-desk.jpg" alt="Laffa Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/laffa-1-mob.jpg" alt="Laffa Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/laffa-2-desk.jpg" alt="Laffa Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/laffa-2-mob.jpg" alt="Laffa Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/laffa-3-desk.jpg" alt="Laffa Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/laffa-3-mob.jpg" alt="Laffa Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/laffa-4-desk.jpg" alt="Laffa Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/laffa-4-mob.jpg" alt="Laffa Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Laffa</span></h2>
+          <p class="proj-card__sub">Streetwear brand landing page</p>
+          <p class="proj-card__desc">A bold dark landing page for an Egyptian streetwear brand. It opens on the winter collection, then moves through a filterable product grid, a lookbook, customer opinions, discounts and a working cart.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-laffa.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/laffa-streetwear-landing-page-/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing food" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/babhalab-1-desk.jpg" alt="Bab Halab Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/babhalab-1-mob.jpg" alt="Bab Halab Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/babhalab-2-desk.jpg" alt="Bab Halab Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/babhalab-2-mob.jpg" alt="Bab Halab Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/babhalab-3-desk.jpg" alt="Bab Halab Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/babhalab-3-mob.jpg" alt="Bab Halab Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/babhalab-4-desk.jpg" alt="Bab Halab Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/babhalab-4-mob.jpg" alt="Bab Halab Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Bab Halab</span></h2>
+          <p class="proj-card__sub">Syrian restaurant website</p>
+          <p class="proj-card__desc">A warm website for a Syrian restaurant. Deep green, Arabic calligraphy and arch-inspired shapes set the mood, then a menu you can filter by course leads to the brand story and an inquiry form.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-bab-halab.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Bab-Halab/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing biz" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/smilecare-1-desk.jpg" alt="Smile Care Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/smilecare-1-mob.jpg" alt="Smile Care Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/smilecare-2-desk.jpg" alt="Smile Care Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/smilecare-2-mob.jpg" alt="Smile Care Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/smilecare-3-desk.jpg" alt="Smile Care Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/smilecare-3-mob.jpg" alt="Smile Care Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/smilecare-4-desk.jpg" alt="Smile Care Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/smilecare-4-mob.jpg" alt="Smile Care Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Smile Care</span></h2>
+          <p class="proj-card__sub">Dental clinic landing page</p>
+          <p class="proj-card__desc">A clean, trustworthy landing page for a dental clinic. Patients see the services, the doctors and the common questions in one scroll, with a booking call to action always within reach.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-smile-care.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/smile-care-clinic/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="learn" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 3</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/manhal-1-desk-en.jpg" alt="Manhal Home on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/manhal-1-mob-en.jpg" alt="Manhal Home on phone" /></figure><figure class="gal__slide" data-cap="Courses"><img class="gal__img gal__img--desk" src="../assets/projects/shots/manhal-2-desk-en.jpg" alt="Manhal Courses on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/manhal-2-mob-en.jpg" alt="Manhal Courses on phone" /></figure><figure class="gal__slide" data-cap="Course page"><img class="gal__img gal__img--desk" src="../assets/projects/shots/manhal-3-desk-en.jpg" alt="Manhal Course page on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/manhal-3-mob-en.jpg" alt="Manhal Course page on phone" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Courses"></button><button class="gal__dot" aria-label="Course page"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Manhal</span></h2>
+          <p class="proj-card__sub">Online courses platform</p>
+          <p class="proj-card__desc">Manhal is an Arabic and English courses marketplace for programming, design, marketing, languages and business. Visitors search, browse by category, compare courses, and open a course page that lays out what they will learn.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-manhal.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Manhal/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="shop" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rayhan-1-desk.jpg" alt="Rayhan Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rayhan-1-mob.jpg" alt="Rayhan Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rayhan-2-desk.jpg" alt="Rayhan Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rayhan-2-mob.jpg" alt="Rayhan Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rayhan-3-desk.jpg" alt="Rayhan Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rayhan-3-mob.jpg" alt="Rayhan Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rayhan-4-desk.jpg" alt="Rayhan Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rayhan-4-mob.jpg" alt="Rayhan Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Rayhan</span></h2>
+          <p class="proj-card__sub">Plant-based skincare store</p>
+          <p class="proj-card__desc">A calm skincare store with a clear promise: plain ingredients, short routines and no exaggerated claims. Shoppers browse the collection, add products to a bag and follow a morning and evening routine.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-rayhan.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Rayhan/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="personal" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/salma-1-desk.jpg" alt="Salma Anwar Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/salma-1-mob.jpg" alt="Salma Anwar Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/salma-2-desk.jpg" alt="Salma Anwar Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/salma-2-mob.jpg" alt="Salma Anwar Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/salma-3-desk.jpg" alt="Salma Anwar Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/salma-3-mob.jpg" alt="Salma Anwar Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/salma-4-desk.jpg" alt="Salma Anwar Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/salma-4-mob.jpg" alt="Salma Anwar Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Salma Anwar</span></h2>
+          <p class="proj-card__sub">Graphic designer portfolio</p>
+          <p class="proj-card__desc">A bold portfolio site for a graphic and brand designer. A strong orange and black hero leads into a selected-work list, an about section and a contact call to action.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-salma-anwar.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Protfolio-Graphic-designer-/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing biz" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/madar-1-desk.jpg" alt="Madar Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/madar-1-mob.jpg" alt="Madar Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/madar-2-desk.jpg" alt="Madar Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/madar-2-mob.jpg" alt="Madar Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/madar-3-desk.jpg" alt="Madar Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/madar-3-mob.jpg" alt="Madar Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/madar-4-desk.jpg" alt="Madar Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/madar-4-mob.jpg" alt="Madar Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Madar</span></h2>
+          <p class="proj-card__sub">Fitness club website</p>
+          <p class="proj-card__desc">A high-energy black and lime website for a training club. It splits training into strength, conditioning and mobility, shows a weekly class schedule, and ends with an inquiry form.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-madar.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Madar-/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="learn" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 3</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fasli-1-desk-en.jpg" alt="Fasli Home on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fasli-1-mob-en.jpg" alt="Fasli Home on phone" /></figure><figure class="gal__slide" data-cap="Class page"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fasli-2-desk-en.jpg" alt="Fasli Class page on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fasli-2-mob-en.jpg" alt="Fasli Class page on phone" /></figure><figure class="gal__slide" data-cap="Login"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fasli-3-desk-en.jpg" alt="Fasli Login on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fasli-3-mob-en.jpg" alt="Fasli Login on phone" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Class page"></button><button class="gal__dot" aria-label="Login"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Fasli</span></h2>
+          <p class="proj-card__sub">Student learning platform</p>
+          <p class="proj-card__desc">Fasli is a student platform in Arabic and English. Students pick their grade, sign in and follow video lessons with a summary for each one, in a warm, friendly design made for younger users.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-fasli.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Fasli/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing food" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/dawra-1-desk.jpg" alt="Dawra Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/dawra-1-mob.jpg" alt="Dawra Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/dawra-2-desk.jpg" alt="Dawra Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/dawra-2-mob.jpg" alt="Dawra Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/dawra-3-desk.jpg" alt="Dawra Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/dawra-3-mob.jpg" alt="Dawra Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/dawra-4-desk.jpg" alt="Dawra Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/dawra-4-mob.jpg" alt="Dawra Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Dawra</span></h2>
+          <p class="proj-card__sub">Pizza restaurant website</p>
+          <p class="proj-card__desc">A playful pizza club website with a checkerboard design and a friendly voice. Visitors read the menu, add pizzas and change the quantity in a basket that updates the total live.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-dawra.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Dawra/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing shop" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/hayn-1-desk.jpg" alt="Hayn Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/hayn-1-mob.jpg" alt="Hayn Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/hayn-2-desk.jpg" alt="Hayn Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/hayn-2-mob.jpg" alt="Hayn Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/hayn-3-desk.jpg" alt="Hayn Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/hayn-3-mob.jpg" alt="Hayn Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/hayn-4-desk.jpg" alt="Hayn Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/hayn-4-mob.jpg" alt="Hayn Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Hayn</span></h2>
+          <p class="proj-card__sub">Furniture and home decor</p>
+          <p class="proj-card__desc">A quiet landing page for a furniture and decor brand. Large room photography comes first, the details follow, and a consultation form invites visitors to start with one corner of their space.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-hayn.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Hayn/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="biz" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 3</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/flight-1-desk.jpg" alt="BlueSky Airways Home on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/flight-1-mob.jpg" alt="BlueSky Airways Home on phone" /></figure><figure class="gal__slide" data-cap="Booking"><img class="gal__img gal__img--desk" src="../assets/projects/shots/flight-2-desk.jpg" alt="BlueSky Airways Booking on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/flight-2-mob.jpg" alt="BlueSky Airways Booking on phone" /></figure><figure class="gal__slide" data-cap="About"><img class="gal__img gal__img--desk" src="../assets/projects/shots/flight-3-desk.jpg" alt="BlueSky Airways About on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/flight-3-mob.jpg" alt="BlueSky Airways About on phone" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Booking"></button><button class="gal__dot" aria-label="About"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>BlueSky Airways</span></h2>
+          <p class="proj-card__sub">Flight booking website</p>
+          <p class="proj-card__desc">BlueSky Airways is a flight booking website built with Bootstrap and TypeScript. The home page puts a quick flight search, a weather widget, a calendar and the latest offers up front, and a step-by-step booking page follows.</p>
+          <div class="xcard__tags"><span class="tag">Bootstrap</span><span class="tag">TypeScript</span><span class="tag">HTML/CSS</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-bluesky.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/flight-booking-website/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing personal" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/daw-1-desk.jpg" alt="Daw Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/daw-1-mob.jpg" alt="Daw Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/daw-2-desk.jpg" alt="Daw Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/daw-2-mob.jpg" alt="Daw Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/daw-3-desk.jpg" alt="Daw Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/daw-3-mob.jpg" alt="Daw Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/daw-4-desk.jpg" alt="Daw Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/daw-4-mob.jpg" alt="Daw Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Daw</span></h2>
+          <p class="proj-card__sub">Photographer visual stories</p>
+          <p class="proj-card__desc">A cinematic landing page for a photographer. Frames fill the screen, a gallery opens full size on click, and a project form asks what story the visitor wants to tell.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-daw.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Daw/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="shop" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 3</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/khuzana-1-desk-en.jpg" alt="Khuzana Home on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/khuzana-1-mob-en.jpg" alt="Khuzana Home on phone" /></figure><figure class="gal__slide" data-cap="Clothes"><img class="gal__img gal__img--desk" src="../assets/projects/shots/khuzana-2-desk-en.jpg" alt="Khuzana Clothes on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/khuzana-2-mob-en.jpg" alt="Khuzana Clothes on phone" /></figure><figure class="gal__slide" data-cap="Product page"><img class="gal__img gal__img--desk" src="../assets/projects/shots/khuzana-3-desk-en.jpg" alt="Khuzana Product page on laptop" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/khuzana-3-mob-en.jpg" alt="Khuzana Product page on phone" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Clothes"></button><button class="gal__dot" aria-label="Product page"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Khuzana</span></h2>
+          <p class="proj-card__sub">Women's fashion online store</p>
+          <p class="proj-card__desc">Khuzana is a women's fashion store front end in Arabic and English. Clothes, bags and shoes sit in one editorial design language, with a lookbook, product pages and a cart.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-khuzana.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Khuzana/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing food" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/eldekka-1-desk.jpg" alt="El-Dekka Café Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/eldekka-1-mob.jpg" alt="El-Dekka Café Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/eldekka-2-desk.jpg" alt="El-Dekka Café Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/eldekka-2-mob.jpg" alt="El-Dekka Café Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/eldekka-3-desk.jpg" alt="El-Dekka Café Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/eldekka-3-mob.jpg" alt="El-Dekka Café Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/eldekka-4-desk.jpg" alt="El-Dekka Café Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/eldekka-4-mob.jpg" alt="El-Dekka Café Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>El-Dekka Café</span></h2>
+          <p class="proj-card__sub">Specialty coffee landing page</p>
+          <p class="proj-card__desc">A warm landing page for a specialty coffee shop. It tells the roasting story, shows an interactive menu, collects customer opinions and ends with a table booking form.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-el-dekka.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/cafe-landing-page-/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="learn" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rawafed-1-desk.jpg" alt="Rawafed School Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rawafed-1-mob.jpg" alt="Rawafed School Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rawafed-2-desk.jpg" alt="Rawafed School Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rawafed-2-mob.jpg" alt="Rawafed School Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rawafed-3-desk.jpg" alt="Rawafed School Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rawafed-3-mob.jpg" alt="Rawafed School Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/rawafed-4-desk.jpg" alt="Rawafed School Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/rawafed-4-mob.jpg" alt="Rawafed School Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Rawafed School</span></h2>
+          <p class="proj-card__sub">Multi-page school website</p>
+          <p class="proj-card__desc">A full school website from kindergarten to secondary school, in Arabic and English. Parents move between the school story, the four stages, activities, teachers, news and the admission steps.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-rawafed-school.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Rawafed-School/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing shop" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/ghosn-1-desk.jpg" alt="Ghosn Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/ghosn-1-mob.jpg" alt="Ghosn Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/ghosn-2-desk.jpg" alt="Ghosn Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/ghosn-2-mob.jpg" alt="Ghosn Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/ghosn-3-desk.jpg" alt="Ghosn Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/ghosn-3-mob.jpg" alt="Ghosn Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/ghosn-4-desk.jpg" alt="Ghosn Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/ghosn-4-mob.jpg" alt="Ghosn Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Ghosn</span></h2>
+          <p class="proj-card__sub">Flower shop landing page</p>
+          <p class="proj-card__desc">A soft pink and olive landing page for a flower shop. Visitors browse bouquets by feeling or occasion and send a note about the colors and message they want.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-ghosn.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Ghosn/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing food" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/forna-1-desk.jpg" alt="Forna Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/forna-1-mob.jpg" alt="Forna Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/forna-2-desk.jpg" alt="Forna Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/forna-2-mob.jpg" alt="Forna Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/forna-3-desk.jpg" alt="Forna Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/forna-3-mob.jpg" alt="Forna Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/forna-4-desk.jpg" alt="Forna Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/forna-4-mob.jpg" alt="Forna Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Forna</span></h2>
+          <p class="proj-card__sub">Bakery website</p>
+          <p class="proj-card__desc">A cheerful bakery website in yellow and red. It shows the day's bakes with a sweet and bread filter, explains the three steps behind each loaf and offers a box request for events.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-forna.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Forna/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing biz" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/mawa-1-desk.jpg" alt="Mawa Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/mawa-1-mob.jpg" alt="Mawa Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/mawa-2-desk.jpg" alt="Mawa Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/mawa-2-mob.jpg" alt="Mawa Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/mawa-3-desk.jpg" alt="Mawa Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/mawa-3-mob.jpg" alt="Mawa Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/mawa-4-desk.jpg" alt="Mawa Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/mawa-4-mob.jpg" alt="Mawa Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Mawa</span></h2>
+          <p class="proj-card__sub">Countryside retreat website</p>
+          <p class="proj-card__desc">A slow, quiet landing page for a countryside retreat. Cabin photography, three simple day moments and a stay planner for dates and guests set the pace.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-mawa.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Mawa/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing shop" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/nada-1-desk.jpg" alt="Nada Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/nada-1-mob.jpg" alt="Nada Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/nada-2-desk.jpg" alt="Nada Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/nada-2-mob.jpg" alt="Nada Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/nada-3-desk.jpg" alt="Nada Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/nada-3-mob.jpg" alt="Nada Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/nada-4-desk.jpg" alt="Nada Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/nada-4-mob.jpg" alt="Nada Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Nada</span></h2>
+          <p class="proj-card__sub">Skincare brand landing page</p>
+          <p class="proj-card__desc">A gentle skincare landing page in soft peach and sage. Visitors pick morning or evening and see the order of care steps, then explore the products on the shelf.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-nada.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Nada-brand-/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="personal" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/masahati-1-desk.jpg" alt="Masahati Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/masahati-1-mob.jpg" alt="Masahati Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/masahati-2-desk.jpg" alt="Masahati Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/masahati-2-mob.jpg" alt="Masahati Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/masahati-3-desk.jpg" alt="Masahati Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/masahati-3-mob.jpg" alt="Masahati Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/masahati-4-desk.jpg" alt="Masahati Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/masahati-4-mob.jpg" alt="Masahati Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>Masahati</span></h2>
+          <p class="proj-card__sub">Customizable personal page</p>
+          <p class="proj-card__desc">Masahati is a ready-made personal page that anyone can fill with their own details. It has a card layout with an intro, a links section and contact fields that are changed from one settings file without touching the design.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-masahati.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/Masahati/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+      <article class="card proj-card" data-cats="landing biz" data-fx data-gallery data-device="desk">
+        <div class="gal">
+          <div class="gal__toggle" role="group" aria-label="Device"><button class="is-on" data-dev="desk">Laptop</button><button data-dev="mob">Phone</button></div>
+          <div class="gal__stage"><span class="gal__count">1 / 4</span><figure class="gal__slide is-on" data-cap="Home"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fitzone-1-desk.jpg" alt="FitZone Gym Home on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fitzone-1-mob.jpg" alt="FitZone Gym Home on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Highlights"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fitzone-2-desk.jpg" alt="FitZone Gym Highlights on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fitzone-2-mob.jpg" alt="FitZone Gym Highlights on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Details"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fitzone-3-desk.jpg" alt="FitZone Gym Details on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fitzone-3-mob.jpg" alt="FitZone Gym Details on phone" loading="lazy" /></figure><figure class="gal__slide" data-cap="Contact"><img class="gal__img gal__img--desk" src="../assets/projects/shots/fitzone-4-desk.jpg" alt="FitZone Gym Contact on laptop" loading="lazy" /><img class="gal__img gal__img--mob" src="../assets/projects/shots/fitzone-4-mob.jpg" alt="FitZone Gym Contact on phone" loading="lazy" /></figure></div>
+          <div class="gal__bar"><button class="gal__nav" data-dir="-1" aria-label="Previous page">&larr;</button><div class="gal__dots"><button class="gal__dot is-on" aria-label="Home"></button><button class="gal__dot" aria-label="Highlights"></button><button class="gal__dot" aria-label="Details"></button><button class="gal__dot" aria-label="Contact"></button></div><button class="gal__nav" data-dir="1" aria-label="Next page">&rarr;</button></div>
+          <p class="gal__cap">Home</p>
+        </div>
+        <div class="proj-card__body">
+          <h2 class="proj-card__title"><span>FitZone Gym</span></h2>
+          <p class="proj-card__sub">Gym landing page</p>
+          <p class="proj-card__desc">A modern gym landing page with a light and dark mode switch. It presents classes, three membership plans, trainers, a gallery and a fitness calculator, with smooth transitions between sections.</p>
+          <div class="xcard__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="proj-card__btns"><a class="btn btn--primary" href="project-fitzone.html">View details &rarr;</a><a class="btn btn--outline" href="https://zeinababoutwyla.github.io/FitZone-Gym/" target="_blank" rel="noopener">Live Demo</a></div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer foot">
+    <canvas class="foot__bubbles" aria-hidden="true"></canvas>
+    <div class="foot__inner">
+      <a href="../index.html" class="foot__logo">Zaynab <span>AbouTwylah</span></a>
+      <p class="foot__tag">Building clear, simple web experiences.</p>
+      <div class="foot__social"><a class="foot__ic" href="https://github.com/ZeinabAbouTwyla" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><a class="foot__ic" href="https://www.linkedin.com/in/zaynab-aboutwylah-b71a79314" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5.2 8.6h3V19h-3zM6.7 4a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10.4 8.6h2.9v1.4h.1c.4-.8 1.4-1.7 3-1.7 3.1 0 3.7 2 3.7 4.7V19h-3v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V19h-3z"/></svg></a><a class="foot__ic" href="mailto:zeinababutwyla@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a></div>
+      <nav class="foot__nav" aria-label="Footer">
+        <a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="skills.html">Skills</a><a href="certificates.html">Certificates</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </nav>
+      <h2 class="foot__thanks">Thanks for stopping by.</h2>
+      <p class="foot__hint">Pop a bubble</p>
+      <p class="footer__year">© 2026 Zaynab AbouTwylah · Full Stack .NET Developer</p>
+    </div>
+  </footer>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../js/scrollfx.js"></script>
+  <script src="../js/projfilter.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/i18n.js"></script>
+</body>
+</html>

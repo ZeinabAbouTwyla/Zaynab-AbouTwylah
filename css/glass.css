@@ -1,0 +1,40 @@
+/* ============================================
+   GLASS — one fixed background for every page
+   (link this file on each page; colors from variables.css)
+============================================ */
+body { background: transparent; position: relative; }
+html { background: var(--bg-primary); }
+body::before {
+  content: "";
+  /* Painted on the page itself (not a fixed layer) so full-page captures and scrolling show one continuous surface.
+     The pattern repeats every 1600px; blobs sit well inside each tile so tile edges are plain background. */
+  position: absolute; inset: 0;
+  z-index: -2;
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(ellipse 34% 14% at 15% 22%, var(--blob-pink), transparent 100%),
+    radial-gradient(ellipse 38% 16% at 86% 30%, var(--blob-blue), transparent 100%),
+    radial-gradient(ellipse 34% 14% at 55% 72%, var(--blob-pink), transparent 100%),
+    radial-gradient(ellipse 30% 12% at 10% 86%, var(--blob-blue), transparent 100%);
+  background-size: 100% 1600px;
+  background-repeat: repeat-y;
+}
+body::after {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: -1;
+  background: var(--glass-fill);
+  pointer-events: none;
+}
+.orb { display: none; }
+.card, .education__card, .exp__item {
+  background: var(--glass-fill) !important;
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--glass-shadow);
+}
+
+/* Arabic (right-to-left) */
+html[dir="rtl"] .page__hi, html[dir="rtl"] .hero__hi, html[dir="rtl"] .home-hero__hi, html[dir="rtl"] .section__label, html[dir="rtl"] [class*="hi"] { font-style: normal; letter-spacing: 0; }
+html[dir="rtl"] .tag, html[dir="rtl"] .logo-chip, html[dir="rtl"] code { direction: ltr; unicode-bidi: isolate; }

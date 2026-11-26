@@ -1,0 +1,143 @@
+/* ============================================
+   ANIMATIONS & SHARED UTILITIES
+============================================ */
+
+/* Orb decorative blobs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+.orb--pink  { background: rgba(200, 80, 192, 0.20); }
+.orb--blue  { background: rgba(65, 88, 208, 0.20); }
+
+/* Fade-up on scroll (add .reveal to elements, JS toggles .visible) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section layout */
+.section {
+  padding: var(--section-pad);
+  position: relative;
+  overflow: hidden;
+}
+
+.section__label {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--accent-pink);
+  margin-bottom: 10px;
+}
+
+.section__title {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.section__title span { color: var(--accent-pink); }
+
+.section__divider {
+  width: 44px;
+  height: 3px;
+  background: var(--gradient-main);
+  border-radius: var(--radius-pill);
+  margin-bottom: 48px;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(90deg, #f857a6, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tag / skill pill */
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: var(--font-heading);
+  color: var(--tag-color);
+  background: var(--tag-bg);
+  border: 0.5px solid var(--border-accent);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  letter-spacing: 0.3px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 11px 28px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity var(--transition), transform var(--transition);
+  border: none;
+}
+.btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn--primary { background: var(--gradient-main); color: #fff; }
+.btn--outline  {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(255,255,255,0.22);
+}
+.btn--outline:hover { border-color: var(--accent-pink); color: var(--accent-pink); }
+
+/* Card base */
+.card {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+
+/* Footer strip */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 36px;
+  border-top: 0.5px solid var(--border-subtle);
+}
+.footer__year {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+.footer__toggle {
+  width: 38px; height: 20px;
+  background: var(--gradient-main);
+  border-radius: var(--radius-pill);
+  position: relative; cursor: pointer;
+}
+.footer__toggle-dot {
+  width: 14px; height: 14px; background: #fff;
+  border-radius: 50%; position: absolute;
+  top: 3px; right: 3px;
+}

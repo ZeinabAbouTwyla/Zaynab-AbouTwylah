@@ -1,0 +1,59 @@
+/* ============================================
+   ZAYNAB.DEV — Design Tokens
+   All colors, fonts, spacing defined here.
+   Change here = changes everywhere.
+============================================ */
+
+:root {
+  /* --- Colors --- */
+  --bg-primary:       #0D0B1E;
+  --bg-secondary:     #13102A;
+  --bg-card:          #1A1730;
+  --bg-glass:         rgba(255, 255, 255, 0.04);
+
+  --accent-pink:      #C850C0;
+  --accent-blue:      #4158D0;
+  --gradient-main:    linear-gradient(90deg, #C850C0, #4158D0);
+  --gradient-diag:    linear-gradient(135deg, #C850C0, #4158D0);
+
+  --text-primary:     #FFFFFF;
+  --text-secondary:   rgba(255, 255, 255, 0.55);
+  --text-muted:       rgba(255, 255, 255, 0.30);
+
+  --border-subtle:    rgba(255, 255, 255, 0.07);
+  --border-accent:    rgba(200, 80, 192, 0.25);
+
+  --tag-bg:           rgba(200, 80, 192, 0.10);
+  --tag-color:        rgba(200, 80, 192, 0.90);
+
+  /* --- Typography --- */
+  --font-heading:     'Space Grotesk', sans-serif;
+  --font-script:      'Dancing Script', cursive;
+  --font-body:        'Inter', sans-serif;
+
+  /* --- Spacing --- */
+  --section-pad:      80px 60px;
+  --nav-height:       64px;
+
+  /* --- Radius --- */
+  --radius-sm:        8px;
+  --radius-md:        14px;
+  --radius-lg:        20px;
+  --radius-pill:      999px;
+
+  /* --- Transitions --- */
+  --transition:       0.25s ease;
+}
+
+/* --- Glass (shared background + panels) --- */
+:root {
+  --glass-fill:       rgba(255, 255, 255, 0.05);
+  --glass-fill-strong:rgba(255, 255, 255, 0.09);
+  --glass-border:     rgba(255, 255, 255, 0.12);
+  --glass-blur:       18px;
+  --glass-shadow:     0 20px 50px rgba(0, 0, 0, 0.45);
+  --blob-pink:        rgba(200, 80, 192, 0.35);
+  --blob-blue:        rgba(65, 88, 208, 0.38);
+  --font-display:     'Bricolage Grotesque', 'Space Grotesk', sans-serif;
+  --font-hand:        'Caveat', 'Dancing Script', cursive;
+}
