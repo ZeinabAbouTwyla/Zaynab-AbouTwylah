@@ -2,6 +2,16 @@
    MAIN.JS — runs on every page
 ============================================ */
 
+// ---- Favicon (ZA monogram), added on every page. Paths follow this script's own location. ----
+(function () {
+  var base = document.currentScript && document.currentScript.src ? document.currentScript.src.replace(/js\/main\.js.*$/, '') : '';
+  [['icon', 'image/x-icon', 'assets/favicon/favicon.ico', ''],
+   ['icon', 'image/png', 'assets/favicon/favicon-32.png', '32x32'],
+   ['apple-touch-icon', '', 'assets/favicon/apple-touch-icon.png', '180x180']].forEach(function (a) {
+    var l = document.createElement('link'); l.rel = a[0]; if (a[1]) l.type = a[1]; if (a[3]) l.sizes = a[3]; l.href = base + a[2]; document.head.appendChild(l);
+  });
+})();
+
 // ---- Scroll reveal (sequential: items that appear together come in one after another) ----
 const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealObserver = new IntersectionObserver(
